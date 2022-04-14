@@ -8,12 +8,12 @@ pip install execpp
 ## Usage Example
 ```python
 from execpp import Cppfile
-cpp=Cppfile("your file name").compile("""
+cpp=Cppfile("your_file_name").compile(r"""
 #include<iostream>
 struct edge{
   int a,b;
   edge(int x,int y):a(x),b(y){}
-}
+};
 int add(const edge&x){
   cout<<"Add here!\n";
   return x.a+x.b;
@@ -21,4 +21,8 @@ int add(const edge&x){
 """)
 e1=cpp.edge(3,10)
 print(cpp.add(e1))
+
+# Output
+# Add here!
+# 13
 ```
