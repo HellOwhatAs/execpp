@@ -5,15 +5,17 @@ Requires [cppimport](https://github.com/tbenthompson/cppimport) and [robotpy-cpp
 ```
 pip install execpp
 ```
-## Usage
+## Usage Example
 ```python
 from execpp import Cppfile
 cpp=Cppfile("your file name").compile("""
+#include<iostream>
 struct edge{
   int a,b;
   edge(int x,int y):a(x),b(y){}
 }
 int add(const edge&x){
+  cout<<"Add here!\n";
   return x.a+x.b;
 }
 """)
