@@ -33,5 +33,5 @@ print(cpp.add(e1))
 
 ## Warning
 - ```template``` not supported
-- ```Cppfile``` 的参数必须符合**C++**的变量命名规范
+- ```Cppfile``` 的参数必须符合 C++ 的变量命名规范
 - "your_file_name.cpp", "your_file_name.pyi", ".rendered.your_file_name.cpp" will be write so **be careful of losing your origin file !!**.
