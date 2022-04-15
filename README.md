@@ -33,4 +33,4 @@ print(cpp.add(e1))
 
 ## Warning
 - ```template``` not supported
-- ```Cppfile```的参数不能用汉字
+- ```Cppfile``` 的参数必须符合**cpp**的变量命名规范
