@@ -9,15 +9,19 @@ pip install execpp
 ```python
 from execpp import Cppfile
 cpp=Cppfile("your_file_name").compile(r"""
+
 #include<iostream>
+
 struct edge{
   int a,b;
   edge(int x,int y):a(x),b(y){}
 };
+
 int add(const edge&x){
   cout<<"Add here!\n";
   return x.a+x.b;
 }
+
 """)
 e1=cpp.edge(3,10)
 print(cpp.add(e1))
@@ -26,3 +30,7 @@ print(cpp.add(e1))
 # Add here!
 # 13
 ```
+
+## Warning
+- ```template``` not supported
+- 
